@@ -13,11 +13,4 @@ import { Location } from '@angular/common';
  */
 export class AppComponent {
   title = 'First Angular App';
-  showNavigation: boolean = false;
-
-  constructor(location: Location, router: Router) {
-    router.events.subscribe(() => {
-      this.showNavigation = location.path() !== '';
-    });
-  }
 }
