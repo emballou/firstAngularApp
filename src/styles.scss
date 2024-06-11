@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+// Blues
+$b-1: #2F6690;
+$b-2: #3A7CA5;
+$b-3: #16425B;
+$b-4: #81C3D7;
+
+// Whites
+$w-1: #D9DCD6;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $w-1;
+}

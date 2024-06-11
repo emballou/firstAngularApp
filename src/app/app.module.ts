@@ -7,13 +7,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { AboutComponent } from './pages/about/about.component';
+import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 
 @NgModule({
   
   declarations: [
     AppComponent ,
     DashboardComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent,
+    WhatsNowComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,

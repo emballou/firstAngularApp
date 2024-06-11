@@ -10,24 +10,23 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
  * Dashboard Component
  */
 export class DashboardComponent implements OnInit, OnDestroy {
-
-
-  constructor() { 
-
+  
+  /**
+   * Constructor
+   */
+  constructor() {
   }
 
   /**
    * ngOnInit
    */
   ngOnInit() {
-
   }
 
   /**
    * ngOnDestroy
    */
   ngOnDestroy() {
-
   }
 
 }

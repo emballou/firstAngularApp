@@ -1,0 +1,30 @@
+@import 'src/styles';
+
+#navbar {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $b-2;
+    border: 4px solid $b-3;
+    
+
+    #navbar-item {
+        margin: auto;
+        background-color: $b-2;
+
+
+
+        &.disabled {
+            pointer-events: none;
+            opacity: .5;
+        }
+        
+        a {
+            color: $w-1;
+        }
+    }
+}
+
+
