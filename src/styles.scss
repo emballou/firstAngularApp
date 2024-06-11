@@ -8,6 +8,10 @@ $b-4: #81C3D7;
 $w-1: #D9DCD6;
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     background-color: $w-1;
+    margin: 0;
 }

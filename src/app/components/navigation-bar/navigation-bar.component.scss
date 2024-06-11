@@ -2,45 +2,43 @@
 
 #navbar {
     display: flex;
-    height: 75px;
+    position: relative;
+    height: 2rem;
+    padding: .75rem 1rem;
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: $b-2;
-    border: 4px solid $b-3;
+    background-color: $b-3;
     
 
     #navbar-item {
         margin: auto;
-        background-color: $b-2;
+        color: $w-1;
+
+        button {
+            background: none;
+            border: none;
+            color: $w-1;;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 0;
+            
+            &.disabled-button {
+                pointer-events: none;
+            }
+        }
+        
+        button:hover:not(.disabled-button) {
+        
+        }
 
         &.disabled {
             pointer-events: none;
             opacity: .5;
         }
-        
-        a {
-            color: $w-1;
-        }
     }
 }
 
-button {
-    background: none;
-    border: none;
-    color: black;
-    text-decoration: none;
-    font-size: inherit;
-    cursor: pointer;
-    padding: 0;
-  
-    &.disabled-button {
-      pointer-events: none;
-    }
-  }
-  
-  button:hover:not(.disabled-button) {
-    
-  }
+
 
 

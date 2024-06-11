@@ -2,19 +2,24 @@ import { PageItem } from "../models/PageItem";
 
 export const PAGE_ITEMS: PageItem[] = [
     {
-        title: "ABOUT",
+        title: "Dashboard",
+        link: "/dashboard",
+        underConstruction: true
+    },
+    {
+        title: "About",
         link: "/about",
         underConstruction: true
     },
     {
-        title: "WHAT'S NOW",
+        title: "What's now",
         link: "/now",
         underConstruction: true,
         hidden: false,
         disabled: true
     },
     {
-        title: "PROJECTS",
+        title: "Projects",
         link: "/projects",
         underConstruction: true
     }
