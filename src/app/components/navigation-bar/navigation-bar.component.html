@@ -1,5 +1,7 @@
 <div id="navbar">
-    <div id="navbar-item" *ngFor="let page of pageItems" [class.disabled]="page.disabled">
-        <a routerLink="{{ page.link }}">{{ page.title }}</a>
+    <div id="navbar-item" *ngFor="let page of pageItems">
+        <button (click)="navigateToPage(page.link)" [disabled]="page.disabled">
+            {{ page.title }}
+        </button>
     </div>
 </div>
