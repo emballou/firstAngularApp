@@ -28,16 +28,27 @@
             }
         }
         
-        button:hover:not(.disabled-button) {
-        
+        button:hover:not(:disabled) {
+            background-color: $b-2;
         }
 
         &.disabled {
             pointer-events: none;
             opacity: .5;
         }
+
+        .active-page {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid green;
+            margin: 2rem;
+        }
     }
 }
+
+
 
 
 
