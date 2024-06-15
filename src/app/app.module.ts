@@ -9,8 +9,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
-import { NavigationBarComponent } from './navigation-bar/components/navigation-bar.component';
-import { NavigationService } from './navigation-bar/services/navigation.service';
+import { NavigationBarComponent } from './navigation-bar/src/lib/components/navigation-bar/navigation-bar.component';
+import { NavigationService } from './navigation-bar/src/lib/services/navigation.service';
 
 @NgModule({
   imports: [

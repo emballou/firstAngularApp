@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { PageItem } from '../models/PageItem';
-import { NavigationService } from '../services/navigation.service';
+import { PageItem } from '../../models/PageItem';
+import { NavigationService } from '../../services/navigation.service';
 
 @Component({
   selector: 'zs-navigation-bar',
