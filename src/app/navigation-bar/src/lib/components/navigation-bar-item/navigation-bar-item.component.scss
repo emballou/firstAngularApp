@@ -1,36 +1,44 @@
 @import 'src/styles';
 
-#navbar-item {
-    padding: 1rem 3rem;
+.navbar-item {
+    height: 100%;
+    padding: 1rem 2rem;
     color: var(--white-1);
     position: relative;
-    
-    &.page-disabled {
-        background-color: var(--transparent-button);
-        color: var(--transparent-button);
-        border-radius: 5px;
-    }
-
-
+    cursor: pointer;
 }
 
+.navbar-item-wrapper {
+    position: relative;
+}
 
-button {
+.navbar-item-btn {
     background: none;
     border: none;
     color: var(--white-1);
     text-decoration: none;
-    cursor: pointer;
     padding: 0;
-    
-    &.disabled-button {
-        pointer-events: none;
-    }
-}
+    border-radius: 5px;
 
-button:hover {
-    &:not(:disabled) {
-        background-color: var(--blue-2);
+    &.page-disabled {
+        background-color: var(--transparent-button);
+        color: var(--transparent-button);
+    }
+
+    &:hover {
+        :disabled {
+            background-color: var(--blue-2);
+            cursor: not-allowed;
+        }
+
+        &:not(:disabled) {
+            background-color: var(--transparent-button);
+
+            span {
+                color: var(--blue-4);
+                
+            }
+        }
     }
 }
 
@@ -39,14 +47,17 @@ button:hover {
     height: 0;
     border-left: 3rem solid transparent;
     border-right: 3rem solid transparent;
-    border-top: 1.5rem solid black;
+    border-top: 1.5rem solid var(--blue-2);
     position: absolute;
-    bottom: -25px;
+    bottom: -28.4px;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 25%;
+    opacity: 30%;
 }
 
+span.navbar-item-btn-text {
+    font-weight: 700;
+}
 
 
 
