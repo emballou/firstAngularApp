@@ -1,0 +1,26 @@
+.button-text-link {
+    color: white;
+}
+
+.button-text {
+    color: white;
+}
+
+.button-icon {
+    margin: .5rem;
+}
+
+.highlight-text {
+    border-bottom: 2px solid var(--blue-4);
+    background-color: rgba(95, 158, 160, .25);
+    padding: 0px 5px;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        font-weight: 600;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,19 @@
+<div>
+    <p class="header">
+        DASHBOARD
+    </p>
+
+    <div>
+        <zs-information-button [buttonText]="'This is an information button component without a link.'" [buttonIcon]="'bi-info-circle-fill'">
+        </zs-information-button>
+    </div>
+
+    <div>
+        <ng-container *ngFor="let profile of socialMediaProfiles">
+            <zs-information-button [buttonLink]="profile.link" [buttonText]="profile.text" [buttonIcon]="profile.icon">
+            </zs-information-button>
+        </ng-container>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

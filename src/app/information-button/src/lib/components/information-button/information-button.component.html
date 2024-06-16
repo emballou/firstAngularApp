@@ -1,4 +1,10 @@
-<a href="{{ buttonLink }}" target="_blank" class="social-media-button">
-    <i class="bi {{ buttonIcon }}"></i>
-    {{ buttonText }}
-</a>
+<i class="button-icon bi {{ buttonIcon }}"></i>
+<ng-container *ngIf="!buttonLink;else textWithLink"> 
+    <span class="button-text">
+        {{ buttonText }}
+    </span>
+</ng-container>
+<ng-template #textWithLink> 
+    <a href="{{ buttonLink }}" target="_blank" class="button-text-link" [ngClass]="{'highlight-text': highlight}" [text]="buttonText"></a>
+</ng-template>
+

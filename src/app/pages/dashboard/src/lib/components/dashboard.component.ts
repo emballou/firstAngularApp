@@ -1,4 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { SocialMediaProfile } from '../models/SocialMediaProfile';
+import { SOCIAL_MEDIA_PROFILES } from '../data/SocialMediaProfiles';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +13,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
  */
 export class DashboardComponent implements OnInit, OnDestroy {
   // TODO: assign this a custom type
-  public socialItems: any = [];
+  public socialMediaProfiles: SocialMediaProfile[] = SOCIAL_MEDIA_PROFILES;
 
   /**
    * Constructor
@@ -21,13 +23,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   /**
    * ngOnInit
    */
-  ngOnInit() {
-    this.socialItems.push({
-      link: 'https://www.linkedin.com/in/eric-ballou-777392198/',
-      icon: 'bi-linkedin',
-      text: 'LinkedIn'
-    })
-  }
+  ngOnInit() {}
 
   /**
    * ngOnDestroy

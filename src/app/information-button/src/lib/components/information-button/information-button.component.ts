@@ -16,6 +16,7 @@ export class InformationButtonComponent implements OnInit, OnDestroy {
   @Input() public buttonLink?: string;
   @Input() public buttonText?: string;
   @Input() public buttonIcon?: InfoButtonIcon;
+  @Input() public highlight?: boolean = true;
 
   /**
    * Constructor

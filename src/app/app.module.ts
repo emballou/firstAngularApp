@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
@@ -13,6 +12,7 @@ import { NavigationBarComponent } from './navigation-bar/src/lib/components/navi
 import { NavigationService } from './navigation-bar/src/lib/services/navigation.service';
 import { NavigationBarItemComponent } from './navigation-bar/src/lib/components/navigation-bar-item/navigation-bar-item.component';
 import { InformationButtonComponent } from './information-button/src/lib/components/information-button/information-button.component';
+import { DashboardComponent } from './pages/dashboard/src/lib/components/dashboard.component';
 
 @NgModule({
   imports: [

@@ -20,24 +20,23 @@
     padding: 0;
     border-radius: 5px;
 
-    &.page-disabled {
+    &.page-disabled,
+    &:hover {
         background-color: var(--transparent-button);
         color: var(--transparent-button);
     }
 
-    &:hover {
-        :disabled {
-            background-color: var(--blue-2);
-            cursor: not-allowed;
-        }
+    &:hover:not(:disabled) {
+        background-color: var(--transparent-button);
 
-        &:not(:disabled) {
-            background-color: var(--transparent-button);
-
-            span {
-                color: var(--blue-4);
-            }
+        span {
+            color: var(--blue-4);
         }
+    }
+
+    &:hover:disabled {
+        background-color: var(--blue-2);
+        cursor: not-allowed;
     }
 }
 
@@ -57,14 +56,12 @@
     bottom: -28.4px;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 30%;
+}
+
+.active-item {
+    background-color: white;
 }
 
 span.navbar-item-btn-text {
     font-weight: 700;
 }
-
-
-
-
-
