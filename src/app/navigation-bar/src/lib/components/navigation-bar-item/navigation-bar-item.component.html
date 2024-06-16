@@ -1,6 +1,6 @@
 <div id="navbar-item" [ngClass]="{'page-disabled': page.disabled}"> 
     <button (click)="navigateToPage(page.link)" [disabled]="page.disabled">
-        {{ page.title }}
+        <p>{{ page.title }}</p>
     </button>
 
     <ng-container *ngIf="isCurrentPage">

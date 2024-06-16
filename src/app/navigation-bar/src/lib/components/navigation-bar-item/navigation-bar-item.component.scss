@@ -11,45 +11,41 @@
         border-radius: 5px;
     }
 
-    button {
-        background: none;
-        border: none;
-        color: var(--white-1);
-        text-decoration: none;
-        cursor: pointer;
-        padding: 0;
-        
-        &.disabled-button {
-            pointer-events: none;
-        }
-    }
+
+}
+
+
+button {
+    background: none;
+    border: none;
+    color: var(--white-1);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
     
-    button:hover {
-        &:not(:disabled) {
-            background-color: var(--blue-2);
-        }
-    }
-
-    &.disabled {
+    &.disabled-button {
         pointer-events: none;
-        opacity: .5;
-    }
-
-    .active-page {
-        width: 0;
-        height: 0;
-        border-left: 3rem solid transparent;
-        border-right: 3rem solid transparent;
-        border-top: 31px solid black;
-        position: absolute;
-        bottom: -33px;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 25%;
-      
     }
 }
 
+button:hover {
+    &:not(:disabled) {
+        background-color: var(--blue-2);
+    }
+}
+
+.active-page {
+    width: 0;
+    height: 0;
+    border-left: 3rem solid transparent;
+    border-right: 3rem solid transparent;
+    border-top: 1.5rem solid black;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 25%;
+}
 
 
 
