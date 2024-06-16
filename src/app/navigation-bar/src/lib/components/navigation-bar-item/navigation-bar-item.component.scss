@@ -1,13 +1,20 @@
 @import 'src/styles';
 
 #navbar-item {
-    margin: 0 3rem;
-    color: $w-1;
+    padding: 1rem 3rem;
+    color: var(--white-1);
+    position: relative;
+    
+    &.page-disabled {
+        background-color: var(--transparent-button);
+        color: var(--transparent-button);
+        border-radius: 5px;
+    }
 
     button {
         background: none;
         border: none;
-        color: $w-1;
+        color: var(--white-1);
         text-decoration: none;
         cursor: pointer;
         padding: 0;
@@ -18,10 +25,8 @@
     }
     
     button:hover {
-        background-color: pink;
-
         &:not(:disabled) {
-            background-color: $b-2;
+            background-color: var(--blue-2);
         }
     }
 
@@ -33,12 +38,19 @@
     .active-page {
         width: 0;
         height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-top: 50px solid green;
-        margin: 2rem;
+        border-left: 3rem solid transparent;
+        border-right: 3rem solid transparent;
+        border-top: 31px solid black;
+        position: absolute;
+        bottom: -33px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 25%;
+      
     }
 }
+
+
 
 
 

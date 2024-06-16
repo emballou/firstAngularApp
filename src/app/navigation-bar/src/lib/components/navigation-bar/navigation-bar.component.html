@@ -1,14 +1,6 @@
 <div id="navbar">
     <ng-container *ngFor="let page of pageItems">
-        <div id="navbar-item"> 
-            <button (click)="navigateToPage(page.link)" [disabled]="page.disabled">
-                {{ page.title }}
-            </button>
-    
-            <ng-container *ngIf="currentPage === page.link">
-                <div class="active-page">
-                </div>
-            </ng-container>
-        </div>
+        <zs-navigation-bar-item [page]="page" [isCurrentPage]="page.link === currentPage">
+        </zs-navigation-bar-item>
     </ng-container>
 </div>

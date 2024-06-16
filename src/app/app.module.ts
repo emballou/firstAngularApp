@@ -11,6 +11,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
 import { NavigationBarComponent } from './navigation-bar/src/lib/components/navigation-bar/navigation-bar.component';
 import { NavigationService } from './navigation-bar/src/lib/services/navigation.service';
+import { NavigationBarItemComponent } from './navigation-bar/src/lib/components/navigation-bar-item/navigation-bar-item.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { NavigationService } from './navigation-bar/src/lib/services/navigation.
     ProjectsComponent,
     AboutComponent,
     WhatsNowComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    NavigationBarItemComponent
   ],
   providers: [
     NavigationService

@@ -1,10 +1,11 @@
-<div id="navbar-item"> 
+<div id="navbar-item" [ngClass]="{'page-disabled': page.disabled}"> 
     <button (click)="navigateToPage(page.link)" [disabled]="page.disabled">
         {{ page.title }}
     </button>
 
-    <ng-container *ngIf="currentPage === page.link">
+    <ng-container *ngIf="isCurrentPage">
         <div class="active-page">
         </div>
     </ng-container>
 </div>
+

@@ -2,7 +2,7 @@ import { Injectable, OnDestroy, OnInit } from '@angular/core';
 import { PageItem } from '../models/PageItem';
 import { PAGE_ITEMS } from '../data/PageItems';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, Router, UrlSegment } from '@angular/router';
 import { Observable, Subscription } from 'rxjs';
 
 /**
@@ -28,7 +28,7 @@ export class NavigationService implements OnInit, OnDestroy {
    * On Init
    */
   public ngOnInit(): void {
-    this.subscribeToRouterChanges();
+    this.subscribeToFirstRoute();
   }
 
   /**
@@ -59,16 +59,14 @@ export class NavigationService implements OnInit, OnDestroy {
   }
 
   /**
-   * Subscribe to router navigation changes.
-   */
-  private subscribeToRouterChanges(): void {
+ * Subscribe to router navigation changes.
+ */
+  private subscribeToFirstRoute(): void {
+    // TODO: DETERMINE THE FIRST URL ON PAGE RELOAD
     this.subscriptions.push(
-      this.router.events.subscribe((e) => {
-        console.log('router changes: ' + this.route);
-        if (e instanceof NavigationEnd) {
-          this.currentPageSubject.next(e.urlAfterRedirects);
-          console.log(e.urlAfterRedirects);
-        }
+      this.route.url.subscribe((urlSegment: UrlSegment[]) => {
+        console.log('first url detected: ' + urlSegment);
+        this.currentPageSubject.next(urlSegment[0].path);
       })
     );
   }

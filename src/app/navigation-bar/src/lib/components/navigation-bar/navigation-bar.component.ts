@@ -41,15 +41,6 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
       }
 
     /**
-     * Navigate to page.
-     * 
-     * @param {string} pageLink page router link 
-     */
-    public navigateToPage(pageLink: string) {
-      this.navigationService.navigateToPage(pageLink);
-    }
-
-    /**
      * Subscribes to the current page route.
      */
     private subscribeToCurrentPage(): void {
