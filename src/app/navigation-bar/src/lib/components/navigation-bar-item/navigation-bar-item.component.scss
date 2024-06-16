@@ -36,9 +36,14 @@
 
             span {
                 color: var(--blue-4);
-                
             }
         }
+    }
+}
+
+.navbar-item-btn.active-btn {
+    span {
+        color: var(--blue-4);
     }
 }
 

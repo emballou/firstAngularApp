@@ -1,15 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { NavigationBarItemComponent } from './navigation-bar-item.component';
+import { InformationButtonComponent } from './information-button.component';
 
-describe('NavigationBarItemComponent', () => {
-  let component: NavigationBarItemComponent;
-  let fixture: ComponentFixture<NavigationBarItemComponent>;
+describe('InformationButtonComponent', () => {
+  let component: InformationButtonComponent;
+  let fixture: ComponentFixture<InformationButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        NavigationBarItemComponent
+        InformationButtonComponent
       ],
       imports: [
         RouterTestingModule

@@ -12,6 +12,7 @@ import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
 import { NavigationBarComponent } from './navigation-bar/src/lib/components/navigation-bar/navigation-bar.component';
 import { NavigationService } from './navigation-bar/src/lib/services/navigation.service';
 import { NavigationBarItemComponent } from './navigation-bar/src/lib/components/navigation-bar-item/navigation-bar-item.component';
+import { InformationButtonComponent } from './information-button/src/lib/components/information-button/information-button.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { NavigationBarItemComponent } from './navigation-bar/src/lib/components/
     AboutComponent,
     WhatsNowComponent,
     NavigationBarComponent,
-    NavigationBarItemComponent
+    NavigationBarItemComponent,
+    InformationButtonComponent
   ],
   providers: [
     NavigationService

@@ -1,7 +1,7 @@
 <div class="navbar-item-wrapper">
-    <button class="navbar-item-btn" [disabled]="page.disabled" (click)="navigateToPage(page.link)">
+    <button class="navbar-item-btn" [ngClass]="{'active-btn': isCurrentPage}" [disabled]="page.disabled" (click)="navigateToPage(page.link)">
         <div class="navbar-item">
-            <span class="navbar-item-btn-text">{{ page.title }}</span>
+            <span class="navbar-item-btn-text" >{{ page.title }}</span>
         </div>
     </button>
 
