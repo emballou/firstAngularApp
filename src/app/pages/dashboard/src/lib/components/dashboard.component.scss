@@ -1,5 +1,49 @@
-
-
 .header {
     font-size: 4em;
+}
+
+.profile-item {
+    padding: .5rem;
+}
+
+.profile-card {
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 10rem;
+}
+
+.profile-picture {
+    opacity: 75%;
+}
+
+.profile-header {
+    padding: 2rem;
+}
+
+.profile-name {
+    font-size: 2rem;
+}
+
+.profile-link {
+    padding: 0 .2rem;
+}
+
+span {
+    vertical-align: bottom;
+    line-height: 20px;
+}
+
+.link-spacer {
+    margin: 0 5px 0 10px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.circle-picture {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    filter: grayscale(100%);
 }

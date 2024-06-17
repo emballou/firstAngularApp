@@ -13,6 +13,7 @@ import { NavigationService } from './navigation-bar/src/lib/services/navigation.
 import { NavigationBarItemComponent } from './navigation-bar/src/lib/components/navigation-bar-item/navigation-bar-item.component';
 import { InformationButtonComponent } from './information-button/src/lib/components/information-button/information-button.component';
 import { DashboardComponent } from './pages/dashboard/src/lib/components/dashboard.component';
+import { PlaygroundComponent } from './pages/playground/playground.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { DashboardComponent } from './pages/dashboard/src/lib/components/dashboa
     ProjectsComponent,
     AboutComponent,
     WhatsNowComponent,
+    PlaygroundComponent,
     NavigationBarComponent,
     NavigationBarItemComponent,
     InformationButtonComponent

@@ -1,19 +1,20 @@
-<div>
-    <p class="header">
-        DASHBOARD
-    </p>
-
-    <div>
-        <zs-information-button [buttonText]="'This is an information button component without a link.'" [buttonIcon]="'bi-info-circle-fill'">
-        </zs-information-button>
-    </div>
-
-    <div>
-        <ng-container *ngFor="let profile of socialMediaProfiles">
-            <zs-information-button [buttonLink]="profile.link" [buttonText]="profile.text" [buttonIcon]="profile.icon">
-            </zs-information-button>
-        </ng-container>
+<div class="profile-card">
+    <div class="profile-header">
+        <div class="profile-item profile-picture">
+            <img src="https://picsum.photos/200" class="circle-picture">
+        </div>
+        <div class="profile-item profile-name">
+            <span>Eric Ballou</span>
+        </div>
+        <div class="profile-item profile-title">
+            <span>Full-Stack Software Engineer</span>
+        </div>
+        <div class="profile-item profile-links">
+            <ng-container *ngFor="let profile of socialMediaProfiles; let isLast=last">
+                <zs-information-button [buttonLink]="profile.link" [buttonText]="profile.text" [buttonIcon]="profile.icon" class="profile-link">
+                </zs-information-button>
+                <span class="link-spacer" *ngIf="!isLast">•</span>
+            </ng-container>
+        </div>
     </div>
 </div>
-
-<router-outlet></router-outlet>

@@ -23,5 +23,10 @@ export const PAGE_ITEMS: PageItem[] = [
         title: "Projects",
         link: "/projects",
         underConstruction: true
+    },
+    {
+        title: "Playground",
+        link: "/playground",
+        underConstruction: true
     }
 ];

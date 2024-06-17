@@ -4,6 +4,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
 import { DashboardComponent } from './pages/dashboard/src/lib/components/dashboard.component';
+import { PlaygroundComponent } from './pages/playground/playground.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'now',
     component: WhatsNowComponent
+  },
+  {
+    path: 'playground',
+    component: PlaygroundComponent
   },
   {
     path: '',
