@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { PageItem } from 'src/app/navigation-bar/src/lib/models/PageItem';
 
 @Component({
   selector: 'app-playground',
@@ -10,15 +11,26 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
  * What's Now Component
  */
 export class PlaygroundComponent implements OnInit, OnDestroy {
-  constructor() {}
+  public page: PageItem = null!;
+  constructor() {
+
+  }
 
   /**
    * ngOnInit
    */
-  public ngOnInit() {}
+  public ngOnInit() { 
+    this.page = {
+      title: 'Title',
+      link: 'playground',
+      underConstruction: false,
+      hidden: false,
+      disabled: true,
+    };
+  }
 
   /**
    * ngOnDestroy
    */
-  public ngOnDestroy() {}
+  public ngOnDestroy() { }
 }

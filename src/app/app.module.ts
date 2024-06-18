@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { AboutComponent } from './pages/about/about.component';
 import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
 import { NavigationBarComponent } from './navigation-bar/src/lib/components/navigation-bar/navigation-bar.component';
 import { NavigationService } from './navigation-bar/src/lib/services/navigation.service';
@@ -28,7 +27,6 @@ import { PlaygroundComponent } from './pages/playground/playground.component';
     AppComponent ,
     DashboardComponent,
     ProjectsComponent,
-    AboutComponent,
     WhatsNowComponent,
     PlaygroundComponent,
     NavigationBarComponent,

@@ -6,11 +6,13 @@
     padding: .5rem;
 }
 
-.profile-card {
+.card {
     text-align: center;
     vertical-align: middle;
-    height: 100%;
-    padding-top: 10rem;
+    max-width: 60%;
+    margin: 2rem auto;
+    border: .5rem solid black;
+    padding: 1rem;
 }
 
 .profile-picture {

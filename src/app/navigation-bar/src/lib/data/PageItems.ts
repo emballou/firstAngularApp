@@ -8,11 +8,6 @@ export const PAGE_ITEMS: PageItem[] = [
         underConstruction: true
     },
     {
-        title: "About",
-        link: "/about",
-        underConstruction: true
-    },
-    {
         title: "What's now",
         link: "/now",
         underConstruction: true,

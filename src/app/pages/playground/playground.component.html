@@ -2,14 +2,22 @@
     <p class="header">
         PLAYGROUND
     </p>
-
-    <div>
-        <zs-information-button [buttonText]="'This is an information button component without a link.'" [buttonIcon]="'bi-info-circle-fill'">
-        </zs-information-button>
+    <div class="section navigation-items">
+        <zs-navigation-bar-item [page]="page" [isCurrentPage]="false"
+            [ngClass]="{'active-item': false}">
+        </zs-navigation-bar-item>
     </div>
-    <div>
-        <zs-information-button [buttonText]="'This page is under construction.'" [buttonIcon]="'bi-exclamation-triangle-fill'">
-        </zs-information-button>
+
+    <div class="section info-buttons">
+        <div>
+            <zs-information-button [buttonText]="'This is an information button component without a link.'"
+                [buttonIcon]="'bi-info-circle-fill'">
+            </zs-information-button>
+        </div>
+        <div>
+            <zs-information-button [buttonText]="'This page is under construction.'"
+                [buttonIcon]="'bi-exclamation-triangle-fill'">
+            </zs-information-button>
+        </div>
     </div>
 </div>
-

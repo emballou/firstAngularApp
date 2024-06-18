@@ -1,6 +1,6 @@
 <div id="navbar">
     <ng-container *ngFor="let page of pageItems">
-        <zs-navigation-bar-item [page]="page" [isCurrentPage]="page.link === currentPage" [ngClass]="{'active-item': page.link === currentPage}">
+        <zs-navigation-bar-item class="margin-5" [page]="page" [isCurrentPage]="page.link === currentPage" [ngClass]="{'active-item': page.link === currentPage}">
         </zs-navigation-bar-item>
     </ng-container>
 </div>
