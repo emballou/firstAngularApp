@@ -13,6 +13,8 @@ import { NavigationBarItemComponent } from './navigation-bar/src/lib/components/
 import { InformationButtonComponent } from './information-button/src/lib/components/information-button/information-button.component';
 import { PlaygroundComponent } from './pages/playground/playground.component';
 import { ProfileComponent } from './pages/profile/src/lib/components/profile.component';
+import { ProjectCarouselComponent } from './project-carousel/src/lib/components/project-carousel/project-carousel.component';
+import { ProjectCarouselItemComponent } from './project-carousel/src/lib/components/project-carousel-item/project-carousel-item.component';
 
 @NgModule({
   imports: [
@@ -31,7 +33,9 @@ import { ProfileComponent } from './pages/profile/src/lib/components/profile.com
     PlaygroundComponent,
     NavigationBarComponent,
     NavigationBarItemComponent,
-    InformationButtonComponent
+    InformationButtonComponent,
+    ProjectCarouselComponent,
+    ProjectCarouselItemComponent
   ],
   providers: [
     NavigationService
