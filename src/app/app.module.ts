@@ -11,7 +11,7 @@ import { NavigationBarComponent } from './navigation-bar/src/lib/components/navi
 import { NavigationService } from './navigation-bar/src/lib/services/navigation.service';
 import { NavigationBarItemComponent } from './navigation-bar/src/lib/components/navigation-bar-item/navigation-bar-item.component';
 import { InformationButtonComponent } from './information-button/src/lib/components/information-button/information-button.component';
-import { DashboardComponent } from './pages/dashboard/src/lib/components/dashboard.component';
+import { ProfileComponent } from './pages/dashboard/src/lib/components/profile.component';
 import { PlaygroundComponent } from './pages/playground/playground.component';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { PlaygroundComponent } from './pages/playground/playground.component';
   exports: [],
   declarations: [
     AppComponent ,
-    DashboardComponent,
+    ProfileComponent,
     ProjectsComponent,
     WhatsNowComponent,
     PlaygroundComponent,

@@ -1,3 +1,16 @@
 .header {
     font-size: 4em;
 }
+
+.path-spacer {
+    fill: var(--blue-2);;
+    stroke: var(--blue-2);
+    stroke-width: 1px;
+    opacity: 50%;
+}
+
+.triangle-spacer {
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+}

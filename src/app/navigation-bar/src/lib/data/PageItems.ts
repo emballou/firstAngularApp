@@ -12,7 +12,6 @@ export const PAGE_ITEMS: PageItem[] = [
         link: "/now",
         underConstruction: true,
         hidden: false,
-        disabled: true
     },
     {
         title: "Projects",
