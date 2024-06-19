@@ -3,8 +3,8 @@ import { PageItem } from "../models/PageItem";
 
 export const PAGE_ITEMS: PageItem[] = [
     {
-        title: "Dashboard",
-        link: "/dashboard",
+        title: "Profile",
+        link: "/profile",
         underConstruction: true
     },
     {
