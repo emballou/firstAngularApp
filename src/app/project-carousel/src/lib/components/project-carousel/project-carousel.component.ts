@@ -1,6 +1,5 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { PROJECT_ITEMS } from '../../data/ProjectItems';
 import { ProjectItem } from '../../models/ProjectItem';
 import { ProjectsService } from '../../services/projects.service';
 
@@ -37,6 +36,7 @@ export class ProjectCarouselComponent implements OnInit, OnDestroy {
     this.projectItems = this.projectsService.projectItems;
     this.visibleProjectIndices = this.getVisibleProjectIndices();
     this.halfVisibleCount = Math.floor(this.visibleCount / 2);
+    console.log(this.halfVisibleCount);
     this.subscribeToPreviewedIndex();
   }
 
@@ -69,6 +69,7 @@ export class ProjectCarouselComponent implements OnInit, OnDestroy {
       this.projectsService.currentIndex$.subscribe(index => {
         this.previewedIndex = index;
         this.updateCurrentProjectText();
+        this.visibleProjectIndices = this.getVisibleProjectIndices();
       })
     );
   }
@@ -88,7 +89,6 @@ export class ProjectCarouselComponent implements OnInit, OnDestroy {
     const start: number  = this.previewedIndex - half;
     const end: number  = this.previewedIndex + half;
     const indices: number[] = [];
-    console.log('length ', projectItemLength, ' half ', half, ' start ', start, ' end ', end);
     for (let i = start; i <= end; i++) {
       indices.push((i + projectItemLength) % projectItemLength);
     }

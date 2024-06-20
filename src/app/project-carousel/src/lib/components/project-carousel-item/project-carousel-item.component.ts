@@ -32,6 +32,7 @@ export class ProjectCarouselItemComponent implements OnInit, OnDestroy {
      */
     public ngOnInit() {
         this.subscribeToPreviewedIndex();
+        console.log("Foreground item - Absolute: ", this.absoluteIndex, " - Relative: ", this.relativeIndex);
     }
 
     /**

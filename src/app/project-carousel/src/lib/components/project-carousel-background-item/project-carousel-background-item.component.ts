@@ -35,8 +35,8 @@ export class ProjectCarouselBackgroundItemComponent implements OnInit, OnDestroy
     public ngOnInit() {
         this.previewImage = this.getPreviewImage();
         this.calculateTransformValue();
-        console.log("This is from a background item :) - ", this.relativeIndex);
         this.zIndexValue = this.calculateZIndex();
+        console.log("Background item - Absolute: ", this.absoluteIndex, " - Relative: ", this.relativeIndex);
     }
 
     /**
