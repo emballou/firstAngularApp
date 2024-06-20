@@ -8,7 +8,7 @@
         filter: grayscale(100%);
         transition: filter 0.5s ease-in-out;
         transition: transform .5s ease-in-out;
-        z-index: 0;
+        z-index: 1;
         position: relative;
         transform: scale(1);
     }
@@ -17,7 +17,8 @@
         transform: scale(1.5);
         filter: none;
         transition: transform .5s ease-in-out;
-        z-index: 1;
+        z-index: 2;
         position: relative;
+        box-shadow: 0 0 1.5rem var(--blue-2);
     }
 }

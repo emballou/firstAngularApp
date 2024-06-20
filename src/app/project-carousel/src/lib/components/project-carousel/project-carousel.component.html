@@ -31,9 +31,13 @@
         </div>
 
         <div class="content-carousel-items-wrapper">
-            <ng-container *ngFor="let project of projectItems; let i = index">
-                <zs-project-carousel-item [project]="project" [absoluteIndex]="i">
+            <ng-container *ngFor="let p of visibleProjectIndices; let i = index">
+                <zs-project-carousel-item *ngIf="i - halfVisibleCount === 0" [project]="projectItems[p]" 
+                    [absoluteIndex]="p" [relativeIndex]="i - halfVisibleCount">
                 </zs-project-carousel-item>
+                <zs-project-carousel-background-item *ngIf="i - halfVisibleCount !== 0" [project]="projectItems[p]" 
+                    [absoluteIndex]="p" [relativeIndex]="i - halfVisibleCount">
+                </zs-project-carousel-background-item>
             </ng-container>
         </div>
     </div>
