@@ -1,3 +1,5 @@
 <div class="project-carousel-item-wrapper">
-    <img [src]="getProjectImage()">
+    <div [ngClass]="{'background-project': !isPreviewed}"> 
+        <img [src]="getPreviewImage()">
+    </div>
 </div>

@@ -2,7 +2,7 @@
     <div class="content-carousel">
         <div class="carousel-nav-arrow nav-left">
             <div class="button-icon-figure">
-                <button class="arrow-button carousel-left-arrow" label="Previous">
+                <button class="arrow-button carousel-left-arrow" label="Previous" (click)="previousButtonHandler()">
                     <div class="button-inner-wrapper">
                         <div class="path-wrapper">
                             <svg width="20" height="20" viewBox="0 0 20 20" focusable="false">
@@ -17,7 +17,7 @@
 
         <div class="carousel-nav-arrow nav-right">
             <div class="button-icon-figure">
-                <button class="arrow-button carousel-right-arrow" label="Next">
+                <button class="arrow-button carousel-right-arrow" label="Next" (click)="nextButtonHandler()">
                     <div class="button-inner-wrapper">
                         <div class="path-wrapper">
                             <svg width="20" height="20" viewBox="0 0 20 20" focusable="false">
@@ -31,8 +31,9 @@
         </div>
 
         <div class="content-carousel-items-wrapper">
-            <ng-container *ngFor="let project of projectItems">
-                <zs-project-carousel-item [project]="project">
+            <ng-container *ngFor="let project of projectItems; let i = index">
+                <zs-project-carousel-item [project]="project" [isPreviewed]="isPreviewedProject(project)" 
+                    [projectIndex]="i" [previewedIndex]="currentIndex">
                 </zs-project-carousel-item>
             </ng-container>
         </div>

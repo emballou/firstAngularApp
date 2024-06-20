@@ -14,6 +14,9 @@ import { ProjectItem } from '../../models/ProjectItem';
 export class ProjectCarouselItemComponent implements OnInit, OnDestroy {
     private subscriptions: Subscription[] = [];
     @Input() project!: ProjectItem;
+    @Input() isPreviewed: boolean = false;
+    @Input() projectIndex: number = 0;
+    @Input() previewedIndex: number = 0;
 
     /**
      * Constructor
@@ -33,9 +36,9 @@ export class ProjectCarouselItemComponent implements OnInit, OnDestroy {
     }
 
     /**
-     * Retrieves project image
+     * Gets the image to preview for the project item.
      */
-    public getProjectImage(): string {
-        return this.project?.images?.[0] ?? 'https://picsum.photos/200';
+    public getPreviewImage() {
+        return this.project?.images?.[0];
     }
 }
