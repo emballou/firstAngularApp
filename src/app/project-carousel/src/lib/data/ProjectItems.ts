@@ -23,5 +23,13 @@ export const PROJECT_ITEMS: ProjectItem[] = [
         images: [
             'https://picsum.photos/210',
         ]
+    },
+    {
+        name: "Sample Project 4",
+        link: "google.com",
+        images: [
+            'https://picsum.photos/215',
+        ]
     }
+
 ];

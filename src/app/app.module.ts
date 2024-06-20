@@ -15,6 +15,7 @@ import { PlaygroundComponent } from './pages/playground/playground.component';
 import { ProfileComponent } from './pages/profile/src/lib/components/profile.component';
 import { ProjectCarouselComponent } from './project-carousel/src/lib/components/project-carousel/project-carousel.component';
 import { ProjectCarouselItemComponent } from './project-carousel/src/lib/components/project-carousel-item/project-carousel-item.component';
+import { ProjectsService } from './project-carousel/src/lib/services/projects.service';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { ProjectCarouselItemComponent } from './project-carousel/src/lib/compone
     ProjectCarouselItemComponent
   ],
   providers: [
-    NavigationService
+    NavigationService,
+    ProjectsService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

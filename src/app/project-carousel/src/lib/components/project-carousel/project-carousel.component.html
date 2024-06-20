@@ -32,10 +32,14 @@
 
         <div class="content-carousel-items-wrapper">
             <ng-container *ngFor="let project of projectItems; let i = index">
-                <zs-project-carousel-item [project]="project" [isPreviewed]="isPreviewedProject(project)" 
-                    [projectIndex]="i" [previewedIndex]="currentIndex">
+                <zs-project-carousel-item [project]="project" [absoluteIndex]="i">
                 </zs-project-carousel-item>
             </ng-container>
         </div>
+    </div>
+    <div class="project-counter-wrapper">
+        <span>
+            {{ currentProjectText }}
+        </span>
     </div>
 </div>

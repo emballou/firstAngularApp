@@ -1,5 +1,5 @@
 <div class="project-carousel-item-wrapper">
-    <div [ngClass]="{'background-project': !isPreviewed}"> 
+    <div [ngClass]="{'previewed-project': isPreviewed}" [ngStyle]="{'z-index': calculateZIndex()}"> 
         <img [src]="getPreviewImage()">
     </div>
 </div>

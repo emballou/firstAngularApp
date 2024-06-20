@@ -14,54 +14,61 @@ import { ProjectsService } from '../../services/projects.service';
  * Project Carousel Component
  */
 export class ProjectCarouselComponent implements OnInit, OnDestroy {
-    public projectItems = PROJECT_ITEMS;
-    public featuredProjectItem = '';
-    public currentIndex = 0;
-    private subscriptions: Subscription[] = [];
+  public projectItems: ProjectItem[] = [];
+  public featuredProjectItem = '';
+  public previewedIndex: number = 0;
+  private subscriptions: Subscription[] = [];
+  public currentProjectText: string = "";
 
-    /**
-     * Constructor
-     * 
-     * @param {ProjectsService} projectsService Projects Service
-     */
-    constructor(private projectsService: ProjectsService) {}
+  /**
+   * Constructor
+   * 
+   * @param {ProjectsService} projectsService Projects Service
+   */
+  constructor(private projectsService: ProjectsService) { }
 
-    /**
-     * ngOnInit
-     */
-    public ngOnInit() {
-        this.projectItems = this.projectsService.getProjectItems();
-        this.currentIndex = Math.round(((this.projectItems.length - 1) / 2));
-        console.log(this.currentIndex);
-    }
+  /**
+   * ngOnInit
+   */
+  public ngOnInit() {
+    this.projectItems = this.projectsService.projectItems;
+    this.subscribeToPreviewedIndex();
+  }
 
-    /**
-     * ngOnDestroy
-     */
-    public ngOnDestroy() {
-      this.subscriptions.forEach(subscription => subscription.unsubscribe());
-    }
+  /**
+   * ngOnDestroy
+   */
+  public ngOnDestroy() {
+    this.subscriptions.forEach(subscription => subscription.unsubscribe());
+  }
 
-    /**
-     * Determines whether or not the project is previewed in the carousel.
-     */
-    public isPreviewedProject(project: ProjectItem) {
-      return this.projectItems[this.currentIndex]?.name == project.name;
-    }
+  /**
+   * Previous project navigation event handler.
+   */
+  public previousButtonHandler() {
+    this.projectsService.decreasePreviewedIndex();
+  }
 
-    /**
-     * Next button navigation event handler.
-     */
-    public nextButtonHandler(event?: Event) {
-      this.currentIndex = (this.currentIndex + 1) % this.projectItems.length;
-      console.log(this.currentIndex);
-    }
+  /**
+   * Next button navigation event handler.
+   */
+  public nextButtonHandler() {
+    this.projectsService.increasePreviewedIndex();
+  }
 
-    /**
-     * Previous project navigation event handler.
-     */
-    public previousButtonHandler(event?: Event) {
-      this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.projectItems.length - 1;
-      console.log(this.currentIndex);
-    }
+  /**
+   * Subscribe to the currently previewed index.
+   */
+  private subscribeToPreviewedIndex(): void {
+    this.subscriptions.push(
+      this.projectsService.currentIndex$.subscribe(index => {
+        this.previewedIndex = index;
+        this.updateCurrentProjectText();
+      })
+    );
+  }
+
+  private updateCurrentProjectText(): void {
+    this.currentProjectText = `${this.previewedIndex + 1} / ${this.projectItems.length}`;
+  }
 }

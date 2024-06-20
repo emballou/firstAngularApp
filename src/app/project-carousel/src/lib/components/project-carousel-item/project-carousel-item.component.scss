@@ -1,9 +1,23 @@
 .project-carousel-item-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-}
+    img {
+        filter: grayscale(100%);
+        transition: filter 0.5s ease-in-out;
+        transition: transform .5s ease-in-out;
+        z-index: 0;
+        position: relative;
+        transform: scale(1);
+    }
 
-
-.background-project img {
-    opacity: 50%;
-    filter: grayscale(100%);
+    .previewed-project img {
+        transform: scale(1.5);
+        filter: none;
+        transition: transform .5s ease-in-out;
+        z-index: 1;
+        position: relative;
+    }
 }
