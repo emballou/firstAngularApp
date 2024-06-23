@@ -3,7 +3,7 @@ img {
     vertical-align: top;
     max-width: 100%;
     filter: grayscale(100%);
-    opacity: .5;
+    opacity: .7;
     transition: opacity .2s ease-in-out;
     transition: filter .2s ease-in-out;
 }
@@ -13,7 +13,7 @@ img {
     box-shadow: 0 0 5rem 1rem black;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    transition: filter 1s ease-in-out;
+    transition: filter .5s ease-in-out;
 }
 
 .bbhkug {

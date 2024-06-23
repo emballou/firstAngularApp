@@ -17,6 +17,7 @@ import { ProjectCarouselComponent } from './project-carousel/src/lib/components/
 import { ProjectCarouselItemComponent } from './project-carousel/src/lib/components/project-carousel-item/project-carousel-item.component';
 import { ProjectsService } from './project-carousel/src/lib/services/projects.service';
 import { ProjectCarouselItemDetailComponent } from './project-carousel/src/lib/components/project-carousel-item-detail/project-carousel-item-detail.component';
+import { ProjectSkillsBlockComponent } from './project-carousel/src/lib/components/project-skills-block/project-skills-block.component';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { ProjectCarouselItemDetailComponent } from './project-carousel/src/lib/c
     InformationButtonComponent,
     ProjectCarouselComponent,
     ProjectCarouselItemComponent,
-    ProjectCarouselItemDetailComponent
+    ProjectCarouselItemDetailComponent,
+    ProjectSkillsBlockComponent
   ],
   providers: [
     NavigationService,

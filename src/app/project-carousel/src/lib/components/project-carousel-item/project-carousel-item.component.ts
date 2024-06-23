@@ -62,24 +62,4 @@ export class ProjectCarouselItemComponent implements OnInit, OnDestroy {
             })
         );
     }
-
-    /**
-     * Calculate the z-index value for each project based on it's relative index.
-     * 
-     * @returns {number} z-index property value
-     */
-    public calculateZIndex(): number {
-        // if position relative index, convert to negative
-        let z: number = this.relativeIndex > 0 ? this.relativeIndex * -1 : this.relativeIndex;
-        return z;
-    }
-
-    public getTransformStyle(relativeIndex: number): any {
-        const translateX = relativeIndex * 100;
-        const scale = 1 - (Math.abs(relativeIndex) * 0.1);
-        return {
-            'z-index': -Math.abs(relativeIndex),
-            'transform': `translateX(${translateX}%)`, // scale(${scale}))
-        };
-    } 
 }

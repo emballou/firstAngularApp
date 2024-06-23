@@ -1,0 +1,5 @@
+<div class="skills-blocks-wrapper">
+    <ng-container *ngFor="let skill of skills">
+        <div class="skills-block" [ngClass]="determineSkillType(skill)">{{skill}}</div>
+    </ng-container>
+</div>

@@ -93,12 +93,19 @@ export class ProjectCarouselComponent implements OnInit, OnDestroy {
       indices.push((i + projectItemLength) % projectItemLength);
     }
     console.log('Indices: ', indices);
-    return indices;
+    return indices.slice(0, Math.min(this.visibleCount, projectItemLength));
   }
 
-  public getTransformStyle(relativeIndex: number): any {
-    const translateXPercentage = (relativeIndex * -1) * 25;
-    const translateX = (relativeIndex * -1) * 80;
+  /**
+   * Gets the styles for each of the projects on the carousel based on
+   * the index relative to the featured project.
+   * 
+   * @param {number }relativeIndex index relative to featured project
+   * @returns {object} style attributes for project in carousel
+   */
+  public getTransformStyle(relativeIndex: number): object {
+    const translateXPercentage = (relativeIndex) * 25;
+    const translateX = (relativeIndex) * 80;
     const scale = 1 - (Math.abs(relativeIndex) * 0.15);
     return {
         'position': `absolute`,
