@@ -1,5 +1,11 @@
-<div class="project-carousel-item-wrapper">
-    <div [ngClass]="{'previewed-project': isPreviewed}" [ngStyle]="{'z-index': calculateZIndex()}"> 
-        <img [src]="getPreviewImage()">
+<div class="featured-content-carousel__item-container 
+            featured-content-carousel__item-container--description" >
+    <div [ngClass]="{'featured-item': relativeIndex == 0}">
+        <div class="featured-content-carousel-featured-item featured-content-carousel-featured-item--offset-2 featured-content-carousel-featured-item--mischief">
+            <div class="croXnx">
+                <div class="cQiQFq item-overlay item-overlay--offset-2"></div>
+                <img class="bbhkug" [src]="getPreviewImage()" alt="Preview image">
+            </div>
+        </div>
     </div>
 </div>

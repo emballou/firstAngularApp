@@ -73,4 +73,13 @@ export class ProjectCarouselItemComponent implements OnInit, OnDestroy {
         let z: number = this.relativeIndex > 0 ? this.relativeIndex * -1 : this.relativeIndex;
         return z;
     }
+
+    public getTransformStyle(relativeIndex: number): any {
+        const translateX = relativeIndex * 100;
+        const scale = 1 - (Math.abs(relativeIndex) * 0.1);
+        return {
+            'z-index': -Math.abs(relativeIndex),
+            'transform': `translateX(${translateX}%)`, // scale(${scale}))
+        };
+    } 
 }

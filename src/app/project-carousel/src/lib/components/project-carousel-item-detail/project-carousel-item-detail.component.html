@@ -1,0 +1,14 @@
+<div class="project-detail-wrapper">
+    <div>
+        <h2>{{ project.name }}</h2>
+    </div>
+    <div *ngIf="project.description"> 
+        <p>{{ project.description }}</p>
+    </div>
+    <div *ngIf="project.skills"> 
+        <p>{{ project.skills }}</p>
+    </div>
+    <div *ngIf="project.link">
+        <a href="{{project.link}}" target="_blank">Link</a>
+    </div>
+</div>

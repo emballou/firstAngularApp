@@ -16,7 +16,7 @@ import { ProfileComponent } from './pages/profile/src/lib/components/profile.com
 import { ProjectCarouselComponent } from './project-carousel/src/lib/components/project-carousel/project-carousel.component';
 import { ProjectCarouselItemComponent } from './project-carousel/src/lib/components/project-carousel-item/project-carousel-item.component';
 import { ProjectsService } from './project-carousel/src/lib/services/projects.service';
-import { ProjectCarouselBackgroundItemComponent } from './project-carousel/src/lib/components/project-carousel-background-item/project-carousel-background-item.component';
+import { ProjectCarouselItemDetailComponent } from './project-carousel/src/lib/components/project-carousel-item-detail/project-carousel-item-detail.component';
 
 @NgModule({
   imports: [
@@ -38,7 +38,7 @@ import { ProjectCarouselBackgroundItemComponent } from './project-carousel/src/l
     InformationButtonComponent,
     ProjectCarouselComponent,
     ProjectCarouselItemComponent,
-    ProjectCarouselBackgroundItemComponent
+    ProjectCarouselItemDetailComponent
   ],
   providers: [
     NavigationService,

@@ -95,4 +95,18 @@ export class ProjectCarouselComponent implements OnInit, OnDestroy {
     console.log('Indices: ', indices);
     return indices;
   }
+
+  public getTransformStyle(relativeIndex: number): any {
+    const translateXPercentage = (relativeIndex * -1) * 25;
+    const translateX = (relativeIndex * -1) * 80;
+    const scale = 1 - (Math.abs(relativeIndex) * 0.15);
+    return {
+        'position': `absolute`,
+        'top': `0px`,
+        'left': `calc(50% - 10rem)`,
+        'z-index': -Math.abs(relativeIndex),
+        'transform': `translateX(${translateX}px) translateX(${translateXPercentage}%) scale(${scale})`,
+        'transition': `all 450ms ease 0s`
+    };
+  } 
 }

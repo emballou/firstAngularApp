@@ -1,24 +1,45 @@
-.project-carousel-item-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        filter: grayscale(100%);
-        transition: filter 0.5s ease-in-out;
-        transition: transform .5s ease-in-out;
-        z-index: 1;
-        position: relative;
-        transform: scale(1);
-    }
-
-    .previewed-project img {
-        transform: scale(1.5);
-        filter: none;
-        transition: transform .5s ease-in-out;
-        z-index: 2;
-        position: relative;
-        box-shadow: 0 0 1.5rem var(--blue-2);
-    }
+img {
+    border: none;
+    vertical-align: top;
+    max-width: 100%;
+    filter: grayscale(100%);
+    opacity: .5;
+    transition: opacity .2s ease-in-out;
+    transition: filter .2s ease-in-out;
 }
+
+.featured-item img {
+    filter: none;
+    box-shadow: 0 0 5rem 1rem black;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+}
+
+.bbhkug {
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ * CONTENT CAROUSEL ITEM CONTAINER
+ */ 
+.featured-content-carousel__item-container {
+    cursor: pointer;
+    height: 20rem;
+    width: 20rem;
+}
+
+.featured-content-carousel__item-container--description {
+    width: 20rem;
+}
+
+/**
+ * CONTENT CAROUSEL ITEM
+ */ 
+
+.featured-content-carousel-featured-item,
+.featured-content-carousel-featured-item--mischief {
+    height: 20rem;
+}
+
