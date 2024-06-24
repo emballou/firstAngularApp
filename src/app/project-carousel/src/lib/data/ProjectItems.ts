@@ -50,17 +50,30 @@ export const PROJECT_ITEMS: ProjectItem[] = [
         ]
     },
     {
-        name: "Personal Website",
+        name: "Personal Website #1",
         links: [
-            { name: "Google", url: "https://www.google.com", icon: "bi-youtube"}
+            { name: "Link", url: "https://emballou.github.io/", icon: "bi-code-slash"},
+            { name: "GitHub", url: "https://github.com/emballou/emballou.github.io", icon: "bi-github"}
         ],
         description: `My personal website is my first website outside of coursework, as well as my first 
             real personal project. It's main purpose is to familiarize myself with Bootstrap, provide some 
             information about myself, and to further practice skills such as HTML, CSS, and JavaScript. 
             It is hosted under GitHub pages.`,
-        skills: ['Personal', 'HTML', 'CSS', 'JavaScript'],
+        skills: ['Personal', 'HTML', 'CSS', 'Bootstrap', 'JavaScript'],
         images: [
-            'https://picsum.photos/215',
+            "https://i.ibb.co/8gMXBxD/personal-website-first.png",
         ]
+    },
+    {
+        name: "Personal Website #2",
+        links: [
+            { name: "GitHub", url: "https://github.com/emballou/personal-portfolio-angular", icon: "bi-github"}
+        ],
+        description: `This site. Made with Angular.`,
+        skills: ['Personal', 'Angular', 'HTML', 'CSS', 'TypeScript'],
+        images: [
+            "https://i.ibb.co/0KjHbv2/personal-website-second.png",
+        ],
+        underConstruction: false
     }
 ];

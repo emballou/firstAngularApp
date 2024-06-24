@@ -15,6 +15,11 @@ export const SOCIAL_MEDIA_PROFILES: SocialMediaProfile[] = [
         text: 'GitHub'
     },
     {
+        link: 'https://codepen.io/eballou18',
+        icon: 'bi-code-slash',
+        text: 'CodePen'
+    },
+    {
         link: 'mailto:eballou18@gmail.com',
         icon: 'bi-envelope-at-fill',
         text: 'Email'

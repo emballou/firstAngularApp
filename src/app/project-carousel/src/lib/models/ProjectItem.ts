@@ -10,4 +10,5 @@ export interface ProjectItem {
     skills: string[];
     images: string[];
     hidden?: boolean;
+    underConstruction?: boolean;
 }
