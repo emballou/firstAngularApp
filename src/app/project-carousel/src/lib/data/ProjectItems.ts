@@ -32,13 +32,15 @@ export const PROJECT_ITEMS: ProjectItem[] = [
         ],
         skills: ['CS576', 'C#', 'Unity'],
         images: [
+            'https://i.ibb.co/rGFzcxb/polytrucker-ui-start.png',
+            'https://i.ibb.co/tZGf84s/polytrucker-ui-game.png',
             'https://i.ibb.co/whftTqx/polytrucker-scene.png'
         ]
     },
     {
         name: "Productivity Hub",
         links: [
-            { name: "Google", url: "https://www.google.com", icon: "bi-youtube"}
+            { name: "YouTube", url: "https://www.youtube.com/watch?v=zvhawDTPxRU", icon: "bi-youtube"}
         ],
         description: `Productivity Hub is a scheduling website used to organize the various logistical 
             needs of a user's day-to-day life. This site was built as a group project for CS326. My role 
@@ -46,7 +48,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
             with user authentication to allow for individual accounts.`,
         skills: ['CS326', 'HTML', 'CSS', 'JavaScript', 'SQL'],
         images: [
-            'https://picsum.photos/210',
+            'https://i.ibb.co/Xt0wr8c/prodhub-class-page.png',
         ]
     },
     {
