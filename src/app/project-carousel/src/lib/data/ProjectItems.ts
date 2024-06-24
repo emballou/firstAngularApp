@@ -50,7 +50,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
         ]
     },
     {
-        name: "Personal Website #1",
+        name: "Personal Website V1",
         links: [
             { name: "Link", url: "https://emballou.github.io/", icon: "bi-code-slash"},
             { name: "GitHub", url: "https://github.com/emballou/emballou.github.io", icon: "bi-github"}
@@ -65,8 +65,9 @@ export const PROJECT_ITEMS: ProjectItem[] = [
         ]
     },
     {
-        name: "Personal Website #2",
+        name: "Personal Website V2",
         links: [
+            { name: "Link", url: "/profile", icon: "bi-code-slash"},
             { name: "GitHub", url: "https://github.com/emballou/personal-portfolio-angular", icon: "bi-github"}
         ],
         description: `This site. Made with Angular.`,

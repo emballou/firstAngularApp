@@ -32,7 +32,6 @@ export class ProjectCarouselItemComponent implements OnInit, OnDestroy {
      */
     public ngOnInit() {
         this.subscribeToPreviewedIndex();
-        console.log("Foreground item - Absolute: ", this.absoluteIndex, " - Relative: ", this.relativeIndex);
     }
 
     /**
@@ -58,7 +57,6 @@ export class ProjectCarouselItemComponent implements OnInit, OnDestroy {
                 this.previewedIndex = index;
                 this.relativeIndex = this.projectsService.getRelativeIndex(this.absoluteIndex);
                 this.isPreviewed = this.relativeIndex === 0;
-                console.log("Absolute: ", this.absoluteIndex, " Relative: ", this.relativeIndex, " Previewed: ", this.previewedIndex);
             })
         );
     }

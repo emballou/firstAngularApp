@@ -106,11 +106,12 @@ export class ProjectCarouselComponent implements OnInit, OnDestroy {
   public getTransformStyle(relativeIndex: number): object {
     const translateXPercentage = (relativeIndex) * 25;
     const translateX = (relativeIndex) * 80;
-    const scale = 1 - (Math.abs(relativeIndex) * 0.15);
+    const scale = 1 - (Math.abs(relativeIndex) * 0.3);
+    // https://stackoverflow.com/questions/66532570/how-to-trigger-window-resize-on-width-changes-only
     return {
         'position': `absolute`,
         'top': `0px`,
-        'left': `calc(50% - 10rem)`,
+        'left': `calc(50% - 15rem)`,
         'z-index': -Math.abs(relativeIndex),
         'transform': `translateX(${translateX}px) translateX(${translateXPercentage}%) scale(${scale})`,
         'transition': `all 450ms ease 0s`
