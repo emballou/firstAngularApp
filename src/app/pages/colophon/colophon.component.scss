@@ -1,0 +1,29 @@
+.path-spacer {
+    fill: var(--blue-2);;
+    stroke: var(--blue-2);
+    stroke-width: 1px;
+    opacity: 50%;
+}
+
+.triangle-spacer {
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.card {
+    text-align: center;
+    vertical-align: middle;
+    max-width: 60%;
+    margin: 1rem auto;
+    border: 4px solid black;
+    padding: 1rem;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    padding: 1rem;
+    text-transform: uppercase;
+}

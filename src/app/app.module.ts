@@ -18,6 +18,7 @@ import { ProjectCarouselItemComponent } from './project-carousel/src/lib/compone
 import { ProjectsService } from './project-carousel/src/lib/services/projects.service';
 import { ProjectCarouselItemDetailComponent } from './project-carousel/src/lib/components/project-carousel-item-detail/project-carousel-item-detail.component';
 import { ProjectSkillsBlockComponent } from './project-carousel/src/lib/components/project-skills-block/project-skills-block.component';
+import { ColophonComponent } from './pages/colophon/colophon.component';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { ProjectSkillsBlockComponent } from './project-carousel/src/lib/componen
     ProjectsComponent,
     WhatsNowComponent,
     PlaygroundComponent,
+    ColophonComponent,
     NavigationBarComponent,
     NavigationBarItemComponent,
     InformationButtonComponent,

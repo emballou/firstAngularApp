@@ -19,6 +19,11 @@ export const PAGE_ITEMS: PageItem[] = [
         hidden: false,
     },
     {
+        title: "...",
+        link: "/colophon",
+        underConstruction: true
+    },
+    {
         title: "Playground",
         link: "/playground",
         underConstruction: true

@@ -4,6 +4,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { WhatsNowComponent } from './pages/whats-now/whats-now.component';
 import { PlaygroundComponent } from './pages/playground/playground.component';
 import { ProfileComponent } from './pages/profile/src/lib/components/profile.component';
+import { ColophonComponent } from './pages/colophon/colophon.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'now',
     component: WhatsNowComponent
+  },
+  {
+    path: 'colophon',
+    component: ColophonComponent
   },
   {
     path: 'playground',
