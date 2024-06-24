@@ -9,7 +9,12 @@
         <zs-project-skills-block [skills]="project.skills">
         </zs-project-skills-block>
     </div>
-    <div *ngIf="project.link">
-        <a href="{{project.link}}" target="_blank">Link</a>
+    <div *ngIf="project.links" class="project-detail-links">
+        <ng-container *ngFor="let link of project.links; let isLast=last">
+            <zs-information-button [buttonLink]="link.url" [buttonText]="link.name"
+                [buttonIcon]="link.icon" class="project-link">
+            </zs-information-button>
+            <span class="link-spacer" *ngIf="!isLast">•</span>
+        </ng-container>
     </div>
 </div>

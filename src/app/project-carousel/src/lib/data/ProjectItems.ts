@@ -10,7 +10,9 @@ export const PROJECT_ITEMS: ProjectItem[] = [
             aliquet sagittis id. Ac tortor dignissim convallis aenean et tortor at risus viverra. Aliquet porttitor
             lacus luctus accumsan tortor. Venenatis urna cursus eget nunc scelerisque viverra.`,
         skills: ['Angular', 'TypeScript'],
-        link: "github.com",
+        links: [
+            { name: "GitHub", url: "github.com", icon: "bi-github"}
+        ],
         images: [
             'https://picsum.photos/195',
             'https://picsum.photos/200'
@@ -25,15 +27,19 @@ export const PROJECT_ITEMS: ProjectItem[] = [
             project in CS576. I was responsible for the UI of the game, including but not limited to the 
             main menu, pause menu and the in-game HUD. I also developed the animal-based AI for the game, 
             which acts as an enemy that wanders around and runs away from the truck's horn.`,
-        link: "",
+        links: [
+            { name: "YouTube", url: "https://www.youtube.com/watch?v=vbj5t95vuic", icon: "bi-youtube"}
+        ],
         skills: ['CS576', 'C#', 'Unity'],
         images: [
-            'https://picsum.photos/200'
+            'https://i.ibb.co/whftTqx/polytrucker-scene.png'
         ]
     },
     {
         name: "Productivity Hub",
-        link: "google.com",
+        links: [
+            { name: "Google", url: "https://www.google.com", icon: "bi-youtube"}
+        ],
         description: `Productivity Hub is a scheduling website used to organize the various logistical 
             needs of a user's day-to-day life. This site was built as a group project for CS326. My role 
             in the project was the school webpage, and also worked closely with another member to help 
@@ -45,7 +51,9 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     },
     {
         name: "Personal Website",
-        link: "google.com",
+        links: [
+            { name: "Google", url: "https://www.google.com", icon: "bi-youtube"}
+        ],
         description: `My personal website is my first website outside of coursework, as well as my first 
             real personal project. It's main purpose is to familiarize myself with Bootstrap, provide some 
             information about myself, and to further practice skills such as HTML, CSS, and JavaScript. 

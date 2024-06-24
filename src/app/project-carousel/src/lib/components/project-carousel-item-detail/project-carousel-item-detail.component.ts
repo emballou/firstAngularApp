@@ -20,16 +20,13 @@ export class ProjectCarouselItemDetailComponent implements OnInit, OnDestroy {
 
     /**
      * Constructor
-     * 
-     * @param {ProjectsService} projectsService Projects Service
      */
-    constructor(private projectsService: ProjectsService) { }
+    constructor() { }
 
     /**
      * ngOnInit
      */
-    public ngOnInit() {
-    }
+    public ngOnInit() {}
 
     /**
      * ngOnDestroy
