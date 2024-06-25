@@ -21,11 +21,13 @@ export const PAGE_ITEMS: PageItem[] = [
     {
         title: "...",
         link: "/colophon",
-        underConstruction: true
+        underConstruction: true,
+        hidden: true
     },
     {
         title: "Playground",
         link: "/playground",
-        underConstruction: true
+        underConstruction: true,
+        hidden: true
     }
 ];

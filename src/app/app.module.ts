@@ -21,6 +21,7 @@ import { ProjectSkillsBlockComponent } from './project-carousel/src/lib/componen
 import { ColophonComponent } from './pages/colophon/colophon.component';
 import { FormsModule } from '@angular/forms';
 import { StatusUpdatesComponent } from './status-updates/src/lib/components/status-updates.component';
+import { PageSpacerComponent } from './spacer/page-spacer.component';
 
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ import { StatusUpdatesComponent } from './status-updates/src/lib/components/stat
     ProjectCarouselItemComponent,
     ProjectCarouselItemDetailComponent,
     ProjectSkillsBlockComponent,
-    StatusUpdatesComponent
+    StatusUpdatesComponent,
+    PageSpacerComponent
   ],
   providers: [
     NavigationService,

@@ -2,8 +2,11 @@
     <h2>
         ...
     </h2>
-    <p>https://www.jack-case.pro/now/</p>
-    <p>https://0xadada.pub/</p>
-    <p>https://info.perjesi.com/#/</p>
-    <p>https://benharr.is/</p>
+    <zs-page-spacer />
+    <ng-container *ngFor="let page of inspirationPages; let i = index;">
+        <p>
+            <a href="{{page}}" target="_blank">-----{{i}}-----</a>
+        </p>
+    </ng-container>
+    <p>
 </div>

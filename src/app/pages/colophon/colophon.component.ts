@@ -10,6 +10,13 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
  * Colophon Component
  */
 export class ColophonComponent implements OnInit, OnDestroy {
+  public inspirationPages: string[] = [
+    "https://www.jack-case.pro/now",
+    "https://0xadada.pub/",
+    "https://info.perjesi.com/#/",
+    "https://benharr.is/",
+    "https://davidbieber.com/"
+  ];
   constructor() {}
 
   /**

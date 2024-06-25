@@ -45,7 +45,9 @@ export class StatusUpdatesComponent implements OnInit, OnDestroy {
    * @returns list of status updates
    */
   public retrieveStatusUpdates(displayCount: number): StatusUpdateItem[] {
-    const statusUpdateList: StatusUpdateItem[] = FAKE_STATUS_UPDATES.sort((statusA, statusB)=> -1 * (statusA.date.getTime() - statusB.date.getTime()));
+    const statusUpdateList: StatusUpdateItem[] = FAKE_STATUS_UPDATES.sort((statusA, statusB) => {
+      return -1 * (statusA.date.getTime() - statusB.date.getTime()); 
+    });
     return statusUpdateList.slice(0, displayCount);
   }
 }
