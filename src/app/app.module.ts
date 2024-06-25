@@ -19,6 +19,8 @@ import { ProjectsService } from './project-carousel/src/lib/services/projects.se
 import { ProjectCarouselItemDetailComponent } from './project-carousel/src/lib/components/project-carousel-item-detail/project-carousel-item-detail.component';
 import { ProjectSkillsBlockComponent } from './project-carousel/src/lib/components/project-skills-block/project-skills-block.component';
 import { ColophonComponent } from './pages/colophon/colophon.component';
+import { FormsModule } from '@angular/forms';
+import { StatusUpdatesComponent } from './status-updates/src/lib/components/status-updates.component';
 
 @NgModule({
   imports: [
@@ -26,7 +28,8 @@ import { ColophonComponent } from './pages/colophon/colophon.component';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [],
   declarations: [
@@ -42,7 +45,8 @@ import { ColophonComponent } from './pages/colophon/colophon.component';
     ProjectCarouselComponent,
     ProjectCarouselItemComponent,
     ProjectCarouselItemDetailComponent,
-    ProjectSkillsBlockComponent
+    ProjectSkillsBlockComponent,
+    StatusUpdatesComponent
   ],
   providers: [
     NavigationService,

@@ -1,0 +1,6 @@
+<div class="status-updates-wrapper" *ngFor="let update of displayedUpdates">
+    <p>{{update.date?.toLocaleString()}}</p>
+    <h4>{{update.name}}</h4>
+    <p>{{update.status}}</p>
+    <p>{{update.song}}</p>
+</div>

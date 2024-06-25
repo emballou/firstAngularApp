@@ -40,6 +40,7 @@ export class ProjectSkillsBlockComponent implements OnInit, OnDestroy {
     if (PROJECT_CONSTANTS.WEB_PROGRAMMING.includes(skill)) return 'web';
     if (PROJECT_CONSTANTS.LANGUAGES.includes(skill)) return 'language';
     if (PROJECT_CONSTANTS.PROGRAMS.includes(skill)) return 'program';
+    if (PROJECT_CONSTANTS.SOFTWARE.includes(skill)) return 'software';
     return '';
   }
 }

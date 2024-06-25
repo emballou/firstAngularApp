@@ -46,7 +46,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
             needs of a user's day-to-day life. This site was built as a group project for CS326. My role 
             in the project was the school webpage, and also worked closely with another member to help 
             with user authentication to allow for individual accounts.`,
-        skills: ['CS326', 'HTML', 'CSS', 'JavaScript', 'SQL'],
+        skills: ['CS326', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PostgreSQL'],
         images: [
             'https://i.ibb.co/Xt0wr8c/prodhub-class-page.png',
         ]
@@ -73,7 +73,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
             { name: "GitHub", url: "https://github.com/emballou/personal-portfolio-angular", icon: "bi-github"}
         ],
         description: `This site. Made with Angular.`,
-        skills: ['Personal', 'Angular', 'HTML', 'CSS', 'TypeScript'],
+        skills: ['Personal', 'Angular', 'HTML', 'SCSS', 'TypeScript'],
         images: [
             "https://i.ibb.co/0KjHbv2/personal-website-second.png",
         ],

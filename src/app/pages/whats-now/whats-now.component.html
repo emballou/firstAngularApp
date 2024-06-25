@@ -3,3 +3,27 @@
         What's now?
     </h2>
 </div>
+<div class="update-status-form-wrapper">
+    <form>
+        <div>
+            <label>
+                Name:
+                <input name="name" [(ngModel)]="name" />
+            </label>
+        </div>
+        <div>
+            <label>
+                Status:
+                <input name="status" [(ngModel)]="status" />
+            </label>
+        </div>
+        <div>
+            <label>
+                Song:
+                <input name="song" [(ngModel)]="song" />
+            </label>
+        </div>
+        <button (click)="sendUpdate()">Send</button>
+    </form>
+</div>
+<zs-status-updates [displayCount]="3"></zs-status-updates>
